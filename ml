@@ -104,10 +104,22 @@ Anthropic Claude
 0. Prompt Engineering?
 Prompt Engineering is the process of designing effective prompts to get accurate and useful responses from an LLM.
 
+0. What is RAG?
+RAG stands for Retrieval-Augmented Generation. 
+Instead of relying only on the model's training data, it retrieves relevant information from external documents and provides that context to the LLM before generating a response.
+User Question
+      ↓
+Retrieve Documents
+      ↓
+Send Context to LLM
+      ↓
+Generate Answer
 
+0. What is LangChain?
+LangChain is a framework used to build LLM applications by connecting prompts, models, memory, tools, and retrieval systems
 
-
-
+0. What is FastAPI?
+FastAPI is a modern Python framework used to build high-performance REST APIs.
 
 
 
