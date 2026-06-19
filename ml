@@ -64,7 +64,7 @@ Linear regression is a statistical method used to find a relationship between tw
 It draws a "best-fit" straight line through data points, allowing you to estimate an unknown value based on a known on
 
 
-Neural Network
+0. Neural Network
 A Neural Network is a machine learning model made up of interconnected neurons that learns patterns from data through training. 
 It consists of input, hidden, and output layers and is commonly used for tasks like image recognition and sentiment analysis.
 Input Layer
@@ -73,26 +73,26 @@ Hidden Layer(s)
      ↓
 Output Layer
 
-epoch
+0. epoch
 An epoch is one complete pass of the training dataset through the model during training.
 Epoch 1 → All 1000 reviews processed once
 Epoch 2 → All 1000 reviews processed again
 Epoch 3 → All 1000 reviews processed again
 
 
-Batch Size
+0.Batch Size
 Batch size is the number of training samples processed before the model updates its weights.
 
-ReLU (Rectified Linear Unit) 
+0.ReLU (Rectified Linear Unit) 
 is the most popular activation function in deep learning. It allows positive values to pass through unchanged, while changing all negative values to zero.
 
-Sigmoid
+0. Sigmoid
 Sigmoid converts inputs into probabilities between 0 and 1 and is commonly used in the output layer for binary classification tasks.
 
-dropout
+0. dropout
 Dropout is a regularization technique that randomly disables neurons during training to reduce overfitting and improve generalization.
 
-A loss function
+0. A loss function
 measures the difference between predicted and actual values. The model tries to minimize loss during training.
 
 
@@ -101,10 +101,24 @@ A Large Language Model is an AI model trained on massive amounts of text data to
 OpenAI GPT
 Anthropic Claude
 
+What can LLMs do?
+Text generation, summarization, translation, question answering, code generation, and chatbot applications.
+
+Traditional ML is usually trained for a specific task such as spam detection or sentiment analysis. 
+LLMs are trained on massive text datasets and can perform many language-related tasks using prompts.
+
+
 0. Prompt Engineering?
 Prompt Engineering is the process of designing effective prompts to get accurate and useful responses from an LLM.
 
-0. What is RAG?
+Why is Prompt Engineering Important?
+Because the quality of the output often depends on how clearly and specifically the prompt is written.
+
+Can you give an example of Prompt Engineering?
+Instead of asking "Explain Python", I can ask "Explain Python for beginners in 5 simple points with examples." 
+The second prompt provides more context and usually produces a better response.
+
+0. What is RAG? - RAG retrieves relevant information from documents and provides it to an LLM so it can generate more accurate answers.
 RAG stands for Retrieval-Augmented Generation. 
 Instead of relying only on the model's training data, it retrieves relevant information from external documents and provides that context to the LLM before generating a response.
 User Question
@@ -115,33 +129,84 @@ Send Context to LLM
       ↓
 Generate Answer
 
-0. What is LangChain?
+Why Use RAG?
+Reduces hallucinations
+Uses company/private data
+Provides up-to-date information
+More accurate answers
+
+What problem does RAG solve?
+RAG helps LLMs answer questions using external documents instead of relying only on their training data.
+
+What are the components of a RAG system?
+Document storage, embeddings, vector database, retrieval component, and the LLM.
+
+0. What is LangChain? - Builds complete LLM applications
 LangChain is a framework used to build LLM applications by connecting prompts, models, memory, tools, and retrieval systems
+
+
+0.AI hallucination 
+is when an artificial intelligence system confidently generates false, misleading, or fabricated information that is completely unsupported by its training data.
+
+0.Vector Database
+A database that stores embeddings and allows similarity search. V
+ector databases store embeddings and help retrieve similar documents based on meaning rather than exact keywords.
+Examples:ChromaDB,Pinecone,Qdrant
+
+0.Embeddings
+are numerical vector representations of text that capture the meaning of words, sentences, or documents.
+
+Why Are Embeddings Used in RAG?
+
+RAG needs to find documents that are semantically similar to a user's question.
+
+Example:
+User asks: How many leaves do employees get?
+Document contains: Annual leave policy for staff
+The words are different, but the meaning is similar. Embeddings help find that document.
+
+What is the difference between Tokenization and Embeddings?
+Tokenization converts text into tokens or IDs, while embeddings convert those tokens into dense numerical vectors that capture semantic meaning.
 
 0. What is FastAPI?
 FastAPI is a modern Python framework used to build high-performance REST APIs.
+Why is it called FastAPI?
+Because it is:
+Fast
+Easy to write
+Supports async programming
+Automatically generates API documentation
 
+0. What is an API?
+An API (Application Programming Interface) allows different applications to communicate with each other.
+Frontend (React)
+       ↓
+API
+       ↓
+Backend (Python/FastAPI)
+       ↓
+Database
 
+0. What is a REST API?
+REST API is a web service that uses HTTP methods such as GET, POST, PUT, and DELETE for communication.
+HTTP Methods -  HTTPS stands for Hypertext Transfer Protocol Secure. It is the secure version of standard HTTP, used to send data between a web browser and a website
+GET - Used to retrieve data.
+Example: GET /users
 
+POST - Used to create data.
+Example: POST /users
 
+PUT - Used to update data.
+Example: PUT /users/1
 
+DELETE - Used to delete data.
+Example: DELETE /users/1
 
+0. What is LlamaIndex?
+LlamaIndex is a framework designed to connect LLMs with external data sources such as PDFs, documents, databases, and APIs.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+0. hallucination
+A hallucination occurs when an LLM generates information that is incorrect, fabricated, or unsupported by facts.
 
 
 
